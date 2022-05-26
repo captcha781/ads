@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    background-color: #8ec5fc;
+    background-image: linear-gradient(62deg, #8ec5fc 0%, #e0c3fc 100%);
+}
+
+.mainer{
+    background-color: rgb(255,255,255,0.4);
+}
+
+@media screen and (width < 600px) {
+    .widther {
+        width: 100%;
+    }
+}
+
+@media screen and (width >= 600px) {
+    .widther {
+        width: 50%;
+    }
+}
+
+a:hover{
+    border-bottom: 1px solid #8ec5fc;
+    transition: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}

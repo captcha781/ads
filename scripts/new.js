@@ -1,0 +1,1 @@
+// Write any JS related codes for new Emergencies here

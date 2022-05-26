@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Emergencies</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <link
+            rel="stylesheet"
+            href="/styles/node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+    </head>
+    <body>
+        <header class="w-100 bg-dark">
+            <nav class="nav d-flex justify-content-between align-items-center py-3 mx-3">
+                <div class="brand text-light h4 my-auto">LOGO</div>
+                <div class="">
+                    <ul class="text-light new-emd-nav d-flex justify-content-between align-items-center my-auto">
+                        <li class="list-item list-unstyled mx-2 "><a class="text-decoration-none text-light" href="/new_emergencies/">New Emergency</a></li>
+                        <li class="px-3 py-1 bg-primary rounded-3 list-item list-unstyled mx-2 "><a class="text-decoration-none text-light" href="/active_emergenices/">Active Emergencies</a></li>
+                        <li class="list-item list-unstyled mx-2 "><a class="text-decoration-none text-light" href="/emergency_details/">Emergency Details</a></li>
+                        <li class="list-item list-unstyled mx-2 "><a class="text-decoration-none text-light" href="/reports">Reports</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+
+            <!-- Don't use the data in the table that is for example purposes recreate the table rows with javascript 
+            with the data retrived from the backend server-->
+
+            <table class="table table-sriped bg-light w-75 mx-auto mt-5 mb-5 text-center">
+                <thead class="bg-dark text-light">
+                    <th>ID</th>
+                    <th>Started</th>
+                    <th>Location</th>
+                    <th>Type</th>
+                    <th>Ambulances</th>
+                    <th>Status</th>
+                </thead>
+                <tbody>
+                    <tr class="border-light">
+                        <td>12263-2</td>
+                        <td>11:34 AM</td>
+                        <td>Town Hall</td>
+                        <td>Bike Accident</td>
+                        <td>225,778</td>
+                        <td id="sts">Delivered</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+    </body>
+    <script src="../scripts/node_modules/axios/dist/axios.min.js"></script>
+    <script src="/scripts/active.js"></script>
+    <script src="/styles/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</html>

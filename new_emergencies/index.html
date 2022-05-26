@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>New Emergencies</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <link
+            rel="stylesheet"
+            href="/styles/node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+    </head>
+    <body>
+        <header class="w-100 bg-dark">
+            <nav
+                class="nav d-flex justify-content-between align-items-center py-3 mx-3"
+            >
+                <div class="brand text-light h4 my-auto">LOGO</div>
+                <div class="">
+                    <ul
+                        class="text-light new-emd-nav d-flex justify-content-between align-items-center my-auto"
+                    >
+                        <li
+                            class="px-3 py-1 bg-primary rounded-3 list-item list-unstyled mx-2"
+                        >
+                            <a
+                                class="text-decoration-none text-light"
+                                href="/new_emergencies/"
+                                >New Emergency</a
+                            >
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            <a
+                                class="text-decoration-none text-light"
+                                href="/active_emergenices/"
+                                >Active Emergencies</a
+                            >
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            <a
+                                class="text-decoration-none text-light"
+                                href="/emergency_details/"
+                                >Emergency Details</a
+                            >
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            <a
+                                class="text-decoration-none text-light"
+                                href="/reports"
+                                >Reports</a
+                            >
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            &nbsp;&nbsp;
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            <a
+                                class="text-decoration-none text-light"
+                                href="/logout"
+                                >Logout</a
+                            >
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            &nbsp;|&nbsp;
+                        </li>
+                        <li class="list-item list-unstyled mx-2">
+                            <a
+                                class="text-decoration-none text-light"
+                                href="/settings"
+                                >Settings</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="conatiner mx-auto w-75 mt-5">
+                <h5>New Emergency</h5>
+                <form method="post">
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="caller_name" class="label"
+                                >Caller Name :
+                            </label>
+                            <input
+                                class="form-control"
+                                id="caller_name"
+                                name="caller_name"
+                                type="text"
+                                placeholder="Some name here"
+                            />
+                        </div>
+                        <div class="col-6">
+                            <label for="num_injured" class="label"
+                                ># People Injured :
+                            </label>
+                            <input
+                                class="form-control"
+                                id="num_injured"
+                                name="num_injured"
+                                type="number"
+                                placeholder="x"
+                            />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="phone_num" class="label"
+                                >Phone Number :
+                            </label>
+                            <input
+                                class="form-control"
+                                id="phone_num"
+                                name="phone_num"
+                                type="tel"
+                                placeholder="9876543210"
+                            />
+                        </div>
+                        <div class="col-6">
+                            <label for="am_req" class="label"
+                                >Ambulance(s) Required :
+                            </label>
+                            <input
+                                class="form-control"
+                                id="am_req"
+                                name="am_req"
+                                type="number"
+                                placeholder="x"
+                            />
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="rel_injured" class="label"
+                                >Relation to injured
+                            </label>
+                            <input
+                                class="form-control"
+                                id="rel_injured"
+                                name="rel_injured"
+                                type="text"
+                                placeholder="Some text here"
+                            />
+                        </div>
+                        <div class="col-2">
+                            <div>
+                                <label for="self_tag" class="label"
+                                    >Self
+                                </label><br>
+                                <input
+                                    class="my-auto"
+                                    id="self_tag"
+                                    name="self_tag"
+                                    type="checkbox"
+                                    style="width: 1em;"
+                                />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-10">
+                            <label for="caller_name" class="label">Address : </label>
+                            <input class="form-control" id="address" name="address" type="text" placeholder="Some address here">
+                        </div>
+                        <div class="col-2">
+                            <label for="confirmed" class="label">Confirmed </label>
+                            <input class="mt-4" id="confirmed" name="confirmed" type="checkbox" style="width:1em;">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-6">
+                            <label for="emd-type" class="label">Address : </label>
+                            <input class="form-control" id="emd-type" name="emd-type" type="text" placeholder="EMD Type">
+                        </div>
+                    </div>
+                    <div class="row mt-3">
+                        <div class="col-10">
+                            <label for="notes" class="label">Notes : </label>
+                            <input class="form-control" id="notes" name="notes" type="text" placeholder="Any notes here....">
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-5 d-flex justify-content-center align-items-center">
+                        <div class="">
+                            <button class="btn btn-primary mx-2 px-3 py-1" type="submit">Submit</button>
+                        </div>
+                        <div class="">
+                            <button class="btn btn-danger mx-2 px-3 py-1" type="reset">Clear</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </body>
+    <script src="../scripts/node_modules/axios/dist/axios.min.js"></script>
+    <script src="/scripts/new.js"></script>
+    <script src="/styles/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</html>

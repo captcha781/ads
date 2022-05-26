@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Login</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="/styles/main.css" />
+        <link
+            rel="stylesheet"
+            href="/styles/node_modules/bootstrap/dist/css/bootstrap.css"
+        />
+    </head>
+    <body
+        class="bg-light d-flex justify-content-center align-items-center"
+        style="height: 100vh"
+    >
+        <main class="mainer widther rounded-2 shadow " style="height: 30rem">
+            <div class="ms-5 mt-lg-5 mb-4 px-5 pt-5">
+                <h3 class="h3">Login</h3>
+            </div>
+            <form class="mx-5" method="post">
+                <div class="">
+                    <label class="label ms-5 h5 text-dark" for="userId">User ID : </label><br>
+                    <input class="ms-5 w-50 form-control mt-1" type="text" id="userid" name="userId" placeholder="SMB00132" required>
+                </div>
+                <div class="">
+                    <label class="label ms-5 mt-4 h5 text-dark" for="password">Password : </label><br>
+                    <input class="ms-5 w-50 form-control mt-1" type="password" id="password" name="password" placeholder="******" required>
+                </div>
+                <div class="">
+                    <button class="float-end me-lg-5 btn btn-primary mt-4 px-4" id="submit">Login</button>
+                </div>
+            </form>
+        </main>
+
+        <script src="../scripts/node_modules/axios/dist/axios.min.js"></script>
+        <script src="/scripts/auth.js"></script>
+        <script src="/styles/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    </body>
+</html>
